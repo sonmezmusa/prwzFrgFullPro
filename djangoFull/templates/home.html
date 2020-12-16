@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+
+{% block body %}
+
+
+
+<div class="container">
+    <h1>News Article Home Page</h1><br>
+
+    {% for article in articles %}
+    <h3>{{ article.title }}</h3>
+    <h4>{{ article.ShortenText }}...</h4>
+    <h5>{{ article.date }}</h5><br>
+    {% endfor %}
+</div>
+
+
+<br><br><br>
+<hr><hr><hr><hr><hr>
+<br><br><br>
+
+
+<h1>This is our latest news home page</h1>
+<p>This is our lates news description</p><hr>
+<h3> Wellcome, {{ name }}</h3> 
+{{ number }}
+
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+    
+{% endblock %}
